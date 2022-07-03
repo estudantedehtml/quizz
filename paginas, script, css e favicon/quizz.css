@@ -17,12 +17,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(0, 255, 255);
-}
-
-section {
-    background-color: rgba(0, 255, 255, 0.459);
-    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.26);
 }
 
 .jogo {
