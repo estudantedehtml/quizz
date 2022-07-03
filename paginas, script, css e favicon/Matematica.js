@@ -41,11 +41,11 @@ if (radio[1].checked) {
     respostas[2].innerHTML = '<p>Você errou, vá para aproxima pergunta</p>'
     button[2].disabled = true
     next[2].disabled = false   
-    } if (radio[10].checked) {
+    } if (radio[11].checked) {
     respostas[3].innerHTML = '<p>Você Acertou!! Aperte para somar os Resultados</p>'
     button[3].disabled = true
     next[3].disabled = false
-    } else if (radio[9].checked || radio[11].checked){
+    } else if (radio[9].checked || radio[10].checked){
     respostas[3].innerHTML = '<p>Você errou, Aperte para somar os Resultados</p>'
     button[3].disabled = true
     next[3].disabled = false

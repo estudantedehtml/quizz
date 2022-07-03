@@ -3,7 +3,6 @@ let pergunta = document.querySelectorAll('#Pergunta1')
 let radio = document.getElementsByName("res")
 let button = document.querySelectorAll('#verificar')
 let buttonfu = document.getElementById('verificarf')
-let respostas = document.querySelectorAll('#respostas')
 let next = document.querySelectorAll('#next')
 let finalres = document.getElementById('result')
 next[0].disabled = true
