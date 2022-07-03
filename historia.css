@@ -1,0 +1,263 @@
+@charset "UTF8";
+@font-face {
+    font-family: 'quizz';
+    src: url(fontes/PWSchoolScript.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*------configurações do JavaScript------*/
+#result {
+    display: none;
+}
+
+#result.aparecer {
+    display: block;
+}
+
+#inicio {
+    display: none;
+}
+
+#inicio.aparecer {
+    display: block;
+}
+
+#começar {
+    display: block;
+}
+
+#começar.sumir {
+    display: none;
+}
+
+#Pergunta1 {
+    display: none;
+}
+
+#Pergunta1.aparecer {
+    display: block;
+}
+
+#Pergunta2 {
+    display: none;
+}
+
+#Pergunta2.remove {
+    display: block;
+}
+
+#verificar {
+    display: none;
+}
+
+#verificar.aparecer {
+    display: block;
+}
+
+#next {
+    display: none;
+}
+
+#next.sumir {
+    display: block;
+}
+
+#conteudo.sumir {
+    display: none;
+}
+
+#conteudo.aparecer {
+    display: block;
+}
+
+/*------configurações do JavaScript------*/
+
+/*------configurações de Estilo------*/
+
+.containerconfig {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.quizz {
+    font-family: 'quizz';
+    font-size: 2rem;
+    text-align: center;
+    color: red;
+}
+
+#começar {
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px;
+    background-color: red;
+    animation: fundo 3s ease-in-out infinite;
+}
+
+@keyframes fundo {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: orange;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+#começar p{
+    padding: 0px 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.quest {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.quest1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.quest2 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.input, .input1, .input2, .input3 {
+    margin-top: 50px;
+    background-color: rgba(207, 207, 207, 0.747);
+    width: 100%;
+}
+
+input {
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+
+label {
+    margin-left: 50px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+
+#Pergunta1 {
+    border-radius: 20px;
+    height: 500px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+#respostas {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+#verificarf {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#verificar {
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: rgb(188, 188, 231);
+    border-radius: 10px;
+    border: 1px;
+    padding:10px 20px;
+}
+
+#proximo, #proximo1, #proximo2, #proximo3 {
+    display: flex;
+    justify-content: right;
+}
+
+#next {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: rgba(197, 255, 197, 0.986);
+}
+
+@media screen and (max-width:350px){
+    .quest, .quest1, .quest2, .quest3 {
+        font-size: 1.50rem;
+    }
+    input {
+        width: 15px;
+        height: 15px;
+    }
+    label {
+        font-size: 1rem;
+    }
+    #respostas {
+        font-size: 15px;
+    }
+}
+
+#container {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.resultado {
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.obri {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+}
+
+#resultado {
+    font-size: 1.50rem;
+    font-family: sans-serif;
+}
+
+.inicio {
+    width: 100%;
+}
+
+#inicio {
+    margin: 0 auto;
+    border: 1px;
+    border-radius: 10px;
+    margin-top: 100px;
+    background-color: whitesmoke;
+}
+
+#inicio a {
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 1.25rem;
+}
+
+
+
+/*------configurações de Estilo------*/
