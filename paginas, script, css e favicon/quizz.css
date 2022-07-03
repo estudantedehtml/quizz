@@ -13,6 +13,18 @@
     margin: 0;
 }
 
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 255, 255);
+}
+
+section {
+    background-color: rgba(0, 255, 255, 0.459);
+    height: 100vh;
+}
+
 .jogo {
     text-align: center;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.315);
@@ -73,6 +85,16 @@ button a {
         display: flex;
         justify-content: left;
     }
+}
+
+
+@media screen and (max-width:228px){
+    header {
+        display: none;
+    }
+section {
+    display: none;
+}
 
 }
 
