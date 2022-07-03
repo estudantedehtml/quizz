@@ -22,7 +22,7 @@ if (radio[1].checked) {
     document.getElementById('verificar').disabled = true
     next[0].disabled = false
     } else if (radio[0].checked || radio[2].checked){
-    respostas[0].innerHTML = `Você acertou!! passe para a proxima pergunta`
+    respostas[0].innerHTML = `Você Errou!! passe para a proxima pergunta`
     document.getElementById('verificar').disabled = true
     next[0].disabled = false
     } if (radio[3].checked) {
