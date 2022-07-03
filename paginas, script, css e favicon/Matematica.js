@@ -25,7 +25,6 @@ function verificar() {
 if (radio[0].checked) {
     respostas[0].innerHTML = `Você acertou!! passe para a proxima pergunta`
     document.getElementById('verificar').disabled = true
-    console.log(numero)
     next[0].disabled = false
     } else if (radio[1].checked) {
     respostas[0].innerHTML = '<p>Você errou, vá para aproxima pergunta</p>'
