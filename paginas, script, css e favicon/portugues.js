@@ -1,16 +1,11 @@
 let começar = document.getElementById('começar')    
 let pergunta = document.querySelectorAll('#Pergunta1')
-let pergunta1 = document.querySelectorAll('#Pergunta2')
 let radio = document.getElementsByName("res")
 let button = document.querySelectorAll('#verificar')
 let buttonfu = document.getElementById('verificarf')
 let respostas = document.querySelectorAll('#respostas')
 let next = document.querySelectorAll('#next')
-let btnproximo = document.getElementById('proximo')
-let btnproximo1 = document.getElementById('proximo1')
-let btnproximo2 = document.getElementById('proximo2')
 let finalres = document.getElementById('result')
-let inicio = document.getElementById('inicio')
 next[0].disabled = true
 next[1].disabled = true
 next[2].disabled = true
@@ -22,59 +17,41 @@ function sumir() {
     next[0].classList.add('sumir')
 }
 function verificar() { 
-if (radio[0].checked) {
-    respostas[0].innerHTML = '<p>Você errou, vá para aproxima pergunta</p>'
-    document.getElementById('verificar').disabled = true
-    next[0].disabled = false
-    } else if (radio[1].checked) {
+if (radio[1].checked) {
     respostas[0].innerHTML = `Você acertou!! passe para a proxima pergunta`
     document.getElementById('verificar').disabled = true
-    numero
     next[0].disabled = false
-    } else if (radio[2].checked) {
-    respostas[0].innerHTML = '<p>Você errou, vá para aproxima pergunta</p>'
+    } else if (radio[0].checked || radio[2].checked){
+    respostas[0].innerHTML = `Você acertou!! passe para a proxima pergunta`
     document.getElementById('verificar').disabled = true
     next[0].disabled = false
-    } else if (radio[3].checked) {
+    } if (radio[3].checked) {
     respostas[1].innerHTML = `Você acertou!! passe para a proxima pergunta`
     button[1].disabled = true
     next[1].disabled = false
-    } else if (radio[4].checked) {
+    } else if (radio[4].checked || radio[5].checked){
     respostas[1].innerHTML = '<p>Você errou, vá para aproxima pergunta</p>'
     button[1].disabled = true
     next[1].disabled = false
-    } else if (radio[5].checked) {
-    respostas[1].innerHTML = '<p>Você errou, vá para aproxima pergunta</p>'
-    button[1].disabled = true
-    next[1].disabled = false
-    } else if (radio[6].checked) {
-    respostas[2].innerHTML = '<p>Você errou, vá para aproxima pergunta</p>'
-    button[2].disabled = true
-    next[2].disabled = false
-    }  else if (radio[7].checked) {
-    respostas[2].innerHTML = '<p>Você errou, vá para aproxima pergunta</p>'
-    button[2].disabled = true
-    next[2].disabled = false
-    }  else if (radio[8].checked) {
+    } if (radio[7].checked) {
     respostas[2].innerHTML = `Você acertou!! passe para a proxima pergunta`
     button[2].disabled = true
     next[2].disabled = false
-    } else if (radio[9].checked) {
-    respostas[3].innerHTML = '<p>Você errou, Aperte para somar os Resultados</p>'
-    next[3].disabled = false
-    }  else if (radio[10].checked) {
+    } else if (radio[6].checked || radio[8].checked){
+    respostas[2].innerHTML = '<p>Você errou, vá para aproxima pergunta</p>'
+    button[2].disabled = true
+    next[2].disabled = false   
+    } if (radio[9].checked) {
     respostas[3].innerHTML = '<p>Você Acertou!! Aperte para somar os Resultados</p>'
     button[3].disabled = true
     next[3].disabled = false
-    }  else if (radio[11].checked) {
+    } else if (radio[10].checked || radio[11].checked){
     respostas[3].innerHTML = '<p>Você errou, Aperte para somar os Resultados</p>'
     button[3].disabled = true
     next[3].disabled = false
 }
 }
-
 function proximo() {
-    document.getElementById('verificar').disabled = false
     pergunta[0].classList.remove('aparecer')
     pergunta[1].classList.add('aparecer')
     button[1].classList.add('aparecer')
@@ -82,7 +59,6 @@ function proximo() {
     next[1].classList.add('sumir')
 }
 function proximo1() {
-    document.getElementById('verificar').disabled = false
     pergunta[1].classList.remove('aparecer')
     pergunta[2].classList.add('aparecer')
     button[1].classList.remove('aparecer')
@@ -103,8 +79,5 @@ function Somar() {
     button[3].classList.remove('aparecer')
     next[3].classList.remove('sumir')
     finalres.classList.add('aparecer')
-    inicio.classList.add('aparecer')
-}  
-
-começar.addEventListener('click', sumir)
+}    
 buttonfu.addEventListener('click', verificar)

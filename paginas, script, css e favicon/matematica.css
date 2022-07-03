@@ -18,14 +18,6 @@
     display: block;
 }
 
-#inicio {
-    display: none;
-}
-
-#inicio.aparecer {
-    display: block;
-}
-
 #começar {
     display: block;
 }
