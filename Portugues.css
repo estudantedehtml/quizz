@@ -216,6 +216,30 @@ label {
     }
 }
 
+#container {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.resultado {
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.obri {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+}
+
+#resultado {
+    font-size: 1.50rem;
+    font-family: sans-serif;
+}
+
 .inicio {
     width: 100%;
 }
@@ -233,5 +257,7 @@ label {
     padding: 5px 15px;
     font-size: 1.25rem;
 }
+
+
 
 /*------configurações de Estilo------*/

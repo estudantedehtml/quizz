@@ -112,8 +112,8 @@ function Somar() {
     next[3].classList.remove('sumir')
     finalres.classList.add('aparecer')
     final.innerHTML = `<p>Você fez ${numero} Pontos!!</p>`
-    let inicio = document.getElementById('inicio')
-}    
+    inicio.classList.add('aparecer')
+}     
 
 começar.addEventListener('click', sumir)
 buttonfu.addEventListener('click', verificar)
